@@ -1,5 +1,8 @@
 import AddNumbers from "./functions"
+import {addStrings} from "./functions"
 
 
 console.log(AddNumbers(1,2));
-console.log(AddNumbers(1, "joe"))
+
+console.log(addStrings("a", "b"));
+console.log(addStrings("a"));
