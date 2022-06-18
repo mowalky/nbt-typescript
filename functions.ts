@@ -22,6 +22,6 @@ export const printFormat = (title:string, params: string|number):void => {
 export const fetchData = (url:string):Promise<string> => Promise.resolve('data');
 
 
-function introduce(salutation: string, ...names:string[]):string => {
+function introduce(salutation: string, ...names: string[]): string {
     return `${salutation} ${names.join(", ")}`;
 }
