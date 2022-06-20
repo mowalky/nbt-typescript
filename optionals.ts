@@ -20,5 +20,10 @@ function getEmail(user: User): string {
 }
 
 function getEmailEasy(user: User): string {
-  return user.info?.email || "";
+  return user?.info?.email ?? "";
+}
+
+function addWithCallback(x: number, y: number, callback?: () => void) {
+  console.log([x, y]);
+  callback?.();
 }
